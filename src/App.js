@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Homepage from './Homepage';
 import ChatInterface from './ChatInterface';
+import WebRTCApp from './WebRTCApp';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/chat" element={<ChatInterface />} />
         </Routes>
       </div>
+      
     </Router>
   );
 };
